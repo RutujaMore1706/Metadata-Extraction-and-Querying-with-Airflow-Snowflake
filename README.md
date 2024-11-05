@@ -1,5 +1,3 @@
-
-## Assignment 4
 Automated PDF Data Extraction and Querying Pipeline with Airflow and Snowflake Integration
 
 
@@ -163,12 +161,3 @@ Grobid: http://34.75.0.13:8070/
 7. **Fetch Results**: Navigate to the "Fetch Result" page on the Streamlit interface. Select a table from which you want to retrieve data from Snowflake. Write a prompt and click on "Generate SQL Query". Review the generated SQL query and edit if necessary. Finally, click on "Execute Query" to retrieve the desired data from the Snowflake table.
 
 By following these steps, you should be able to run the application locally and interact with it using the provided Streamlit interface to upload PDF files, trigger data processing pipelines, and query Snowflake for results.
-
-
-## Team Information and Contribution 
-
-Name           | NUID          |
----------------|---------------|
-Anirudh Joshi  | 002991365     |      
-Nitant Jatale  | 002776669     |      
-Rutuja More    | 00272782      |      
