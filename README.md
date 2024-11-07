@@ -1,20 +1,29 @@
 Automated PDF Data Extraction and Querying Pipeline with Airflow and Snowflake Integration
 
+## Project Overview:
+
+This project implements an automated pipeline to extract metadata and content from PDF files, validate it, and store it in Snowflake for further analysis. Using Airflow for orchestration and Snowflake for data storage, this pipeline ensures efficient handling of PDF data. The project also includes two API services built with FastAPI, providing endpoints to trigger the pipeline and query stored data.
 
 ## Problem Statement:
 
-Develop an end-to-end pipeline utilizing Airflow to automate the extraction and storage of meta-data and content from PDF files into Snowflake. The task involves building two API services using FastAPI: one to trigger the Airflow pipeline and another to interface with Snowflake for querying.
+Handling large volumes of PDF data can be labor-intensive and error-prone. This pipeline addresses the need for a scalable, automated solution to:
 
+1. Extract data and metadata from PDF files.
+2. Validate the extracted information.
+3. Store and manage data in Snowflake, making it queryable for analytical needs.
 
 ## Project Goals
-
-  1.Build a FastAPI service to accept S3 file locations and initiate an Airflow pipeline for:
-    a. Extraction of data and metadata from PDF files.
-    b. Validating the extracted data using predefined tools.
-    c. Loading the data and metadata into Snowflake.
-
-  2.Develop a separate FastAPI service to interact with Snowflake and provide query responses.
-
+1. Airflow Pipeline Integration
+    Build a FastAPI service that:
+      1. Accepts file locations of PDF documents stored in S3.
+      2. Triggers an Airflow pipeline to:
+          1. Extract data and metadata from the PDF files.
+          2. Validate the extracted data to ensure quality and integrity.
+          3. Load the processed data and metadata into Snowflake.
+2. Snowflake Query Service
+    Create a separate FastAPI service that:  
+    1. Interfaces with Snowflake to allow users to query the stored data.
+    2. Provides fast and reliable responses for user-specified queries.
 
 ## Codelab
 
